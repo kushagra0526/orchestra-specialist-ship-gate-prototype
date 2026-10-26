@@ -5,10 +5,10 @@ import numpy as np
 from . import sim
 
 
-def score(seeds, held):
+def score(seeds, held, T=None, k=None):
     rows = []
     for s in seeds:
-        w = sim.make_world(s, held)
+        w = sim.make_world(s, held, T, k)
         search, confirm = sim.attempts(w)
         n, g = sim.naive(w, search, confirm), sim.gate(w, search, confirm)
         o = sim.oracle(w, g["c"])
@@ -33,6 +33,9 @@ def score(seeds, held):
 
 def main():
     out = {"dev": score(range(0, 400), False), "held_out": score(range(1000, 1400), True)}
+    # added after the held-out run: same held-out worlds with a bigger evaluation
+    for T, k in ((100, 10), (400, 20)):
+        out[f"what_if_T{T}_k{k}"] = score(range(1000, 1400), True, T, k)
     json.dump(out, open("out/result.json", "w"), indent=1)
     for k, v in out.items():
         print(k, json.dumps(v, indent=1))

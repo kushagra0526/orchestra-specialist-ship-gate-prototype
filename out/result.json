@@ -1,0 +1,58 @@
+{
+ "dev": {
+  "worlds": 400,
+  "naive_shipped": 35,
+  "naive_shipped_but_truly_over_margin": 25,
+  "naive_mean_true_loss_pts_when_shipped": 4.14,
+  "naive_mean_saving_pct": 7.3,
+  "gate_shipped": 38,
+  "gate_shipped_but_truly_over_margin": 4,
+  "gate_mean_true_loss_pts_when_shipped": 1.96,
+  "gate_mean_saving_pct": 6.9,
+  "gate_held_but_routed_system_was_ok": 195,
+  "oracle_mean_saving_pct": 65.6,
+  "specialist_alone_truly_over_margin": 389
+ },
+ "held_out": {
+  "worlds": 400,
+  "naive_shipped": 20,
+  "naive_shipped_but_truly_over_margin": 14,
+  "naive_mean_true_loss_pts_when_shipped": 4.25,
+  "naive_mean_saving_pct": 4.2,
+  "gate_shipped": 28,
+  "gate_shipped_but_truly_over_margin": 1,
+  "gate_mean_true_loss_pts_when_shipped": 1.81,
+  "gate_mean_saving_pct": 4.5,
+  "gate_held_but_routed_system_was_ok": 201,
+  "oracle_mean_saving_pct": 60.1,
+  "specialist_alone_truly_over_margin": 392
+ },
+ "what_if_T100_k10": {
+  "worlds": 400,
+  "naive_shipped": 0,
+  "naive_shipped_but_truly_over_margin": 0,
+  "naive_mean_true_loss_pts_when_shipped": 0.0,
+  "naive_mean_saving_pct": 0.0,
+  "gate_shipped": 33,
+  "gate_shipped_but_truly_over_margin": 3,
+  "gate_mean_true_loss_pts_when_shipped": 2.27,
+  "gate_mean_saving_pct": 5.8,
+  "gate_held_but_routed_system_was_ok": 171,
+  "oracle_mean_saving_pct": 60.7,
+  "specialist_alone_truly_over_margin": 400
+ },
+ "what_if_T400_k20": {
+  "worlds": 400,
+  "naive_shipped": 0,
+  "naive_shipped_but_truly_over_margin": 0,
+  "naive_mean_true_loss_pts_when_shipped": 0.0,
+  "naive_mean_saving_pct": 0.0,
+  "gate_shipped": 103,
+  "gate_shipped_but_truly_over_margin": 0,
+  "gate_mean_true_loss_pts_when_shipped": 2.25,
+  "gate_mean_saving_pct": 18.0,
+  "gate_held_but_routed_system_was_ok": 263,
+  "oracle_mean_saving_pct": 61.2,
+  "specialist_alone_truly_over_margin": 400
+ }
+}
